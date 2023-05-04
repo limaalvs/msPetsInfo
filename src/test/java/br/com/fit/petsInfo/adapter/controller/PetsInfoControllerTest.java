@@ -1,4 +1,4 @@
-package br.com.fit.petsInfo.adapter.controller.test;
+package br.com.fit.petsInfo.adapter.controller;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
@@ -20,7 +20,6 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import br.com.fit.petsInfo.adapter.controller.PetsInfoController;
 import br.com.fit.petsInfo.application.dto.UserInfoRequest;
 import br.com.fit.petsInfo.application.dto.UserInfoResponse;
 import br.com.fit.petsInfo.application.port.in.OperationPetsInfoPortIn;
@@ -45,8 +44,8 @@ public class PetsInfoControllerTest {
 	
 	@BeforeEach
 	void setUp() {
-		request = UserInfoRequestFactory.buildRequestToCreateUser();
-		response = UserInfoResponseFactory.buildResponseToCreateUser();
+		request = UserInfoRequestFactory.buildRequestMock();
+		response = UserInfoResponseFactory.buildResponseMock();
 	}
 	
 	

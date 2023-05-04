@@ -10,7 +10,7 @@ import br.com.fit.petsInfo.application.enums.Status;
 
 public class UserInfoRequestFactory {
 	
-	public static UserInfoRequest buildRequestToCreateUser () {
+	public static UserInfoRequest buildRequestMock () {
 		 var request = new UserInfoRequest();
 		 
 		 request.setUsername("BruceNaoEhoBatman");

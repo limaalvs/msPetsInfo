@@ -51,13 +51,13 @@ public class PetsInfoController {
 	}
 	
 	@DeleteMapping("{id}")
-	public ResponseEntity<Void> deleteUserInfoByUserName(@PathVariable @Min(value = 1, message = "User id should be greater than 0") Long id) {
+	public ResponseEntity<Void> deleteUserInfoById(@PathVariable @Min(value = 1, message = "User id should be greater than 0") Long id) {
 		infosPortIn.deleteUserInfo(id);
 		return new ResponseEntity<>(null, HttpStatus.OK);
 	}
 	
 	@PutMapping("{id}")
-	public ResponseEntity<UserInfoResponse> updateUserInfoByUserName(@PathVariable @Min(value = 1, message = "User id should be greater than 0") Long id, @RequestBody UserInfoRequest request) {
+	public ResponseEntity<UserInfoResponse> updateUserInfoById(@PathVariable @Min(value = 1, message = "User id should be greater than 0") Long id, @RequestBody UserInfoRequest request) {
 		var response = infosPortIn.updatePetsListByUserName(id, request);
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}

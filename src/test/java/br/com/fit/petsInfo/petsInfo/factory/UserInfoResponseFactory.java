@@ -11,7 +11,7 @@ import br.com.fit.petsInfo.application.enums.Status;
 public class UserInfoResponseFactory {
 	
 	
-	public static UserInfoResponse buildResponseToCreateUser() {
+	public static UserInfoResponse buildResponseMock() {
 		var response = new UserInfoResponse();
 		 response.setId(1L);
 		 response.setUsername("BruceNaoEhoBatman");
