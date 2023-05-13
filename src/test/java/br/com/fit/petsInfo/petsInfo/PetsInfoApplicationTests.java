@@ -6,11 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import br.com.fit.petsInfo.PetsInfoApplication;
 
 @SpringBootTest
-class PetsInfoApplicationTests {
-	/*
-	 * @Test void contextLoads() { }
-	 */
-	 
+class PetsInfoApplicationTests {	 
 	@Test
 	public void applicationContextLoaded() {
 	}
