@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "e10eb272-57cf-442b-af27-9c86a6d3e425",
+		"name": "MS_1_PETINFOS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ATIVIDADE MICROSERVICOS",
+			"item": [
+				{
+					"name": "CRIANDO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"Marcos M\",\r\n    \"cpf\": \"487.877.057.09\",\r\n    \"address\": \"Rua Dos bobos\",\r\n    \"petsList\": [\r\n        {\r\n            \"petName\": \"Apolo\",\r\n            \"rating\": 5,\r\n            \"animalType\": \"CACHORRO\",\r\n            \"status\": \"ADOTADO\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/petsInfo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"petsInfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ATUALIZA",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"userName\": \"Marcos M\",\r\n    \"cpf\": \"487.877.057.09\",\r\n    \"address\": \"Rua Dos bobos\",\r\n    \"registrationDate\": \"Fri May 12 23:21:42 BRT 2023\",\r\n    \"petsList\": [\r\n        {\r\n            \"id\": 1,\r\n            \"petName\": \"Apolo\",\r\n            \"rating\": 5,\r\n            \"animalType\": \"CACHORRO\",\r\n            \"status\": \"ADOTADO\"\r\n        },\r\n        {\r\n            \"petName\": \"Mike\",\r\n            \"rating\": 5,\r\n            \"animalType\": \"GATO\",\r\n            \"status\": \"ADOTADO\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/petsInfo/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"petsInfo",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BUSCA USUARIOS POR ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/petsInfo/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"petsInfo",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BUSCA TODOS OS USUARIOS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/petsInfo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"petsInfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETA POR ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/petsInfo/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"petsInfo",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
