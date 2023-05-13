@@ -43,7 +43,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": 1,\r\n    \"userName\": \"Marcos M\",\r\n    \"cpf\": \"487.877.057.09\",\r\n    \"address\": \"Rua Dos bobos\",\r\n    \"registrationDate\": \"Fri May 12 23:21:42 BRT 2023\",\r\n    \"petsList\": [\r\n        {\r\n            \"id\": 1,\r\n            \"petName\": \"Apolo\",\r\n            \"rating\": 5,\r\n            \"animalType\": \"CACHORRO\",\r\n            \"status\": \"ADOTADO\"\r\n        },\r\n        {\r\n            \"petName\": \"Mike\",\r\n            \"rating\": 5,\r\n            \"animalType\": \"GATO\",\r\n            \"status\": \"ADOTADO\"\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"userName\": \"Marcos M\",\r\n    \"cpf\": \"487.877.057.09\",\r\n    \"address\": \"Rua Dos bobos\",\r\n    \"petsList\": [\r\n        {\r\n            \"id\": 1,\r\n            \"petName\": \"Apolo\",\r\n            \"rating\": 5,\r\n            \"animalType\": \"CACHORRO\",\r\n            \"status\": \"ADOTADO\"\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"

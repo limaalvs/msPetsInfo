@@ -1,5 +1,6 @@
 package br.com.fit.petsInfo.infrastructure.adapters.output.persistence.mapper.impl;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -25,7 +26,7 @@ public class PetInfoPersistenceMapper implements EntityMapper {
 				.username(record.getUsername())
 				.cpf(record.getCpf())
 				.address(record.getAddress())
-				.registrationDate(new Date().toString())
+				.registrationDate(new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date()))
 				.petsList(this.toPetsListEntity(record.getPetsList()))
 				.build();
 		
